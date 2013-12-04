@@ -9,6 +9,10 @@ describe("codicefiscale", function () {
         expect(codicefiscale).to.be.an('function');
     });
 
+    it("check emptyness", function () {
+        expect(codicefiscale("")).to.be.equal('Il codice fiscale è vuoto.');
+    });
+
     it("check length", function () {
         expect(codicefiscale("DFFF")).to.be.equal('La lunghezza del codice fiscale non è corretta.');
     });
