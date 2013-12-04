@@ -7,15 +7,13 @@ The best project ever.
 Install the module with: `npm install codicefiscale --save`
 
 ```javascript
-var codicefiscale = require('codicefiscale');
-codicefiscale.awesome(); // "awesome"
+var codicefiscaleValid = require('codicefiscale');
+var result = codicefiscaleValid("RSSMRA85T10A562S");
 ```
 
 ## Documentation
-_(Coming soon)_
+Return a string with error if code is not valid, otherwise return null
 
-## Examples
-_(Coming soon)_
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style.
